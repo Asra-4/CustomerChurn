@@ -1,12 +1,14 @@
-**Customer Churn Analysis Project
+****Customer Churn Analysis Project
 
-Overview**
+Overview****
 
 This project focuses on analyzing customer churn data and building machine learning models to predict customer churn. The process includes data preprocessing, feature engineering, exploratory data analysis, and implementing various machine learning algorithms for classification.
+
 
 **Dataset**
 
 The dataset contains customer information, including demographics, tenure, monthly charges, and contract types. The target variable is Churn, which indicates whether a customer has left the service (Yes or No).
+
 
 **Project Workflow**
 
@@ -34,6 +36,8 @@ Missing values in the InternetService column are filled with an empty string.
 
 **3. Exploratory Data Analysis (EDA)**
 
+
+
 2. Handling Missing Values
 
 Code:
@@ -42,6 +46,9 @@ df["InternetService"] = df["InternetService"].fillna("")
 
 Explanation:
 Missing values in the InternetService column are filled with an empty string.
+
+
+
 
 3. Exploratory Data Analysis (EDA)
 
@@ -68,6 +75,10 @@ plt.show()
 Explanation:
 EDA helps uncover patterns, relationships, and insights from the data. Various visualizations and grouping operations are used to explore the data.
 
+
+
+
+
 4. Feature Engineering
 
 Code:
@@ -79,6 +90,9 @@ y['Churn'] = y['Churn'].apply(lambda x: 1 if x == "Yes" else 0)
 
 Explanation:
 The categorical Gender column is converted to binary, and the target variable Churn is encoded as 0 or 1.
+
+
+
 
 5. Data Splitting and Scaling
 
@@ -95,6 +109,9 @@ scaled_x_test = scaler.transform(x_test)
 
 Explanation:
 The dataset is split into training and testing sets. Features are scaled for better performance of machine learning models.
+
+
+
 
 6. Model Training and Evaluation
 
@@ -169,6 +186,9 @@ grid_rfc.fit(x_train, y_train)
 Explanation:
 Random Forest Classifier is tuned for the best performance.
 
+
+
+
 7. Model Evaluation
 
 Code:
@@ -180,6 +200,9 @@ def modelperformance(predictions):
 
 Explanation:
 The function modelperformance evaluates the accuracy of the predictions.
+
+
+
 
 8. Saving the Best Model
 
@@ -344,6 +367,9 @@ grid_rfc.fit(x_train, y_train)
 
 **Explanation:**
 Random Forest Classifier is tuned for the best performance.
+
+
+
 
 **7. Model Evaluation**
 
