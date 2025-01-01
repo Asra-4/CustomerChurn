@@ -415,6 +415,17 @@ Python 3.x
 
 Libraries: pandas, matplotlib, sklearn, joblib
 
+
+## Dataset Attribution
+
+This project uses a dataset sourced from Kaggle. You can download the dataset directly from the Kaggle platform:
+[MIT Dataset](https://www.kaggle.com/) (or replace with the actual dataset link).
+
+The dataset is subject to the terms and conditions specified by its author(s) on Kaggle. Please review the Kaggle dataset's license before use. Due to licensing restrictions, the dataset is not included in this repository.
+
+
+
+
 **Usage**
 
 Place the customer_churn_data.csv in the project directory.
